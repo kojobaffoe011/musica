@@ -13,6 +13,12 @@ import reggae from "../assets/images/reggae.svg";
 import tmr from "../assets/images/tmr.svg";
 import like from "../assets/icons/like.svg";
 import life from "../assets/images/life.svg";
+import mountain from "../assets/images/mountain.svg";
+import limits from "../assets/images/limits.svg";
+import everything from "../assets/images/everything.svg";
+import cancelled from "../assets/images/cancelled.svg";
+import nomad from "../assets/images/nomad.svg";
+import blind from "../assets/images/blind.svg";
 
 const SideBar = () => {
   return (
@@ -66,10 +72,7 @@ const TopCharts = (props) => {
 
 const Content = () => {
   return (
-    <div
-      style={{ padding: "110px 60px 24px 0px", width: "100%" }}
-      className="bordered"
-    >
+    <div style={{ padding: "110px 60px 24px 0px", width: "100%" }} className="">
       <Grid span={12}>
         <GridItem
           span={7}
@@ -122,7 +125,7 @@ const Album = (props) => {
 const NewReleases = (props) => {
   return (
     <Flex
-      className="bordered"
+      className=""
       style={{ paddingLeft: "101px", paddingTop: "20px", paddingRight: "60px" }}
       stack={true}
       spacing={12}
@@ -130,14 +133,16 @@ const NewReleases = (props) => {
       <p className="white">{props.heading}</p>
       <Flex spacing={30} style={{ overflowX: "scroll" }}>
         <Album image={life} title={"Life in a bubble"} artiste={"The van"} />
-        <Album image={life} title={"Life in a bubble"} artiste={"The van"} />
-        <Album image={life} title={"Life in a bubble"} artiste={"The van"} />
-        <Album image={life} title={"Life in a bubble"} artiste={"The van"} />
-        <Album image={life} title={"Life in a bubble"} artiste={"The van"} />
-        <Album image={life} title={"Life in a bubble"} artiste={"The van"} />
-        <Album image={life} title={"Life in a bubble"} artiste={"The van"} />
-        <Album image={life} title={"Life in a bubble"} artiste={"The van"} />
-        <Album image={life} title={"Life in a bubble"} artiste={"The van"} />
+        <Album image={mountain} title={"Mountain"} artiste={"Krisx"} />
+        <Album image={limits} title={"Limits"} artiste={"John Dillion"} />
+        <Album
+          image={everything}
+          title={"Everything's Black"}
+          artiste={"Ameed"}
+        />
+        <Album image={cancelled} title={"Cancelled"} artiste={"Enimen"} />
+        <Album image={nomad} title={"Nomad"} artiste={"Makrol eli"} />
+        <Album image={blind} title={"Blind"} artiste={"Wiz zee"} />
         <Album image={life} title={"Life in a bubble"} artiste={"The van"} />
       </Flex>
     </Flex>
@@ -153,7 +158,7 @@ const Homepage = () => {
       </Flex>
       <NewReleases heading={"New Releases."} />
       <NewReleases heading={"Popular in your area."} />
-      <div style={{ height: "20vh" }}></div>
+      <div style={{ height: "15vh" }}></div>
     </Flex>
   );
 };
