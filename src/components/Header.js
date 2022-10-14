@@ -12,8 +12,11 @@ const Header = () => {
       </div>
       <Flex className="flex-grow " style={{ paddingLeft: "30px" }}>
         <input
+          type="text"
+          font="regular"
           className="icon input flex-grow"
-          placeholder="Search your artists"
+          placeholder="Search artistes"
+          style={{ fontFamily: "regular" }}
         />
       </Flex>
     </Flex>

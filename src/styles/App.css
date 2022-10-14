@@ -1,5 +1,6 @@
 p {
   margin: 0;
+  font-family: regular;
 }
 
 .bordered {
@@ -45,4 +46,63 @@ p {
 }
 .bg-blue {
   background-color: #609eaf;
+}
+
+.regular {
+  font-family: regular;
+}
+
+.bold {
+  font-family: bold;
+}
+
+.light {
+  font-family: light;
+}
+
+.topic {
+  font-family: bold;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #efeee0;
+}
+
+.smallest {
+  font-family: bold;
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 120%;
+}
+.smallest-alt {
+  font-family: regular;
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 120%;
+}
+
+.small {
+  font-family: light;
+  /* font-style: normal; */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+}
+
+.small-alt {
+  font-family: regular;
+  /* font-style: normal; */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+}
+
+.medium {
+  font-family: regular;
+  /* font-style: normal; */
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 120%;
 }

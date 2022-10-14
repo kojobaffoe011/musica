@@ -58,10 +58,10 @@ const TopCharts = (props) => {
       <div className="" style={{ flexBasis: "15%" }}>
         <img src={props.image} />
       </div>
-      <Flex className=" flex-grow" stack={true}>
-        <p className="white">{props.title}</p>
-        <p className="gray">{props.creator}</p>
-        <p className="white">{props.time}</p>
+      <Flex className=" flex-grow" stack={true} spacing={6}>
+        <p className="white medium">{props.title}</p>
+        <p className="gray small">{props.creator}</p>
+        <p className="white small-alt">{props.time}</p>
       </Flex>
       <Flex className="" style={{ flexBasis: "15%" }} ai="center" jc="center">
         <img src={like} />
@@ -76,15 +76,18 @@ const Content = () => {
       <Grid span={12}>
         <GridItem
           span={7}
+          md={12}
           className=" bg-blue"
           style={{
             borderRadius: "40px",
             height: "45vh",
           }}
-        ></GridItem>
+        >
+          {"R & B Hits"}
+        </GridItem>
         <GridItem span={5} className="">
           <Flex stack={true} spacing={12}>
-            <p className="white">Top Charts</p>
+            <p className="white topic">Top Charts</p>
             <TopCharts
               image={golden}
               title={"Golden age of 80s"}
@@ -116,8 +119,8 @@ const Album = (props) => {
       <div>
         <img src={props.image} style={{ borderRadius: "25px" }} />
       </div>
-      <p className="white">{props.title}</p>
-      <p className="gray">{props.artiste}</p>
+      <p className="white small">{props.title}</p>
+      <p className="gray smallest-alt">{props.artiste}</p>
     </Flex>
   );
 };
@@ -130,7 +133,7 @@ const NewReleases = (props) => {
       stack={true}
       spacing={12}
     >
-      <p className="white">{props.heading}</p>
+      <p className="topic">{props.heading}</p>
       <Flex spacing={30} style={{ overflowX: "scroll" }}>
         <Album image={life} title={"Life in a bubble"} artiste={"The van"} />
         <Album image={mountain} title={"Mountain"} artiste={"Krisx"} />

@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <Flex stack={true} spacing={3}>
           <p className="white">Seasons in</p>
-          <p className="gray">James</p>
+          <p className="gray smallest">James</p>
         </Flex>
       </Flex>
       <Flex
