@@ -1,0 +1,22 @@
+.header {
+  padding-right: 60px;
+  padding-left: 20px;
+  position: fixed;
+  width: 100%;
+}
+.header-icon {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 24px;
+}
+
+.icon {
+  padding-left: 40px;
+  background: url("../assets/icons/search.svg") no-repeat left;
+  background-size: 20px;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+}

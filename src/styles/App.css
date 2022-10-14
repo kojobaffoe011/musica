@@ -1,0 +1,48 @@
+p {
+  margin: 0;
+}
+
+.bordered {
+  border: 1px dotted;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.primary {
+  color: #1d2123;
+}
+.bg-primary {
+  background-color: #1d2123;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.gray {
+  color: rgba(255, 255, 255, 0.44);
+}
+
+.bg-gray {
+  color: rgba(255, 255, 255, 0.44);
+}
+
+.dark {
+  color: #1a1e1f;
+}
+.bg-dark {
+  background-color: #1a1e1f;
+}
+
+.blue {
+  color: #609eaf;
+}
+.bg-blue {
+  background-color: #609eaf;
+}
