@@ -1,0 +1,9 @@
+.side {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .side {
+    display: none;
+  }
+}

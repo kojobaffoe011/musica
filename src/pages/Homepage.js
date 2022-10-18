@@ -37,15 +37,8 @@ const TopCharts = (props) => {
 
 const Content = () => {
   return (
-    <div style={{ padding: "110px 60px 24px 0px", width: "100%" }} className="">
-      <Grid
-        span={12}
-        style={
-          {
-            //   height: "45vh",
-          }
-        }
-      >
+    <div style={{ width: "100%" }} className="content">
+      <Grid span={12}>
         <GridItem
           span={7}
           md={12}
@@ -99,16 +92,7 @@ const Album = (props) => {
 
 const NewReleases = (props) => {
   return (
-    <Flex
-      className=""
-      style={{
-        paddingTop: "20px",
-        paddingLeft: "101px",
-        paddingRight: "60px",
-      }}
-      stack={true}
-      spacing={12}
-    >
+    <Flex className="release" stack={true} spacing={12}>
       <p className="topic">{props.heading}</p>
       <Flex spacing={30} style={{ overflowX: "scroll" }}>
         <Album image={life} title={"Life in a bubble"} artiste={"The van"} />
