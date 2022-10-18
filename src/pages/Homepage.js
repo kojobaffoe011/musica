@@ -2,12 +2,9 @@ import React from "react";
 import Flex from "../components/layout/Flex";
 import Grid, { GridItem } from "../components/layout/Grid";
 import "../styles/homepage.css";
-import home from "../assets/icons/Home.svg";
+import SideBar from "../components/SideBar";
 import playlist from "../assets/icons/playlist.svg";
-import radio from "../assets/icons/radio.svg";
-import vid from "../assets/icons/vid.svg";
-import user from "../assets/icons/user.svg";
-import logout from "../assets/icons/logout.svg";
+import home from "../assets/icons/Home.svg";
 import golden from "../assets/images/golden-age.svg";
 import reggae from "../assets/images/reggae.svg";
 import tmr from "../assets/images/tmr.svg";
@@ -19,38 +16,6 @@ import everything from "../assets/images/everything.svg";
 import cancelled from "../assets/images/cancelled.svg";
 import nomad from "../assets/images/nomad.svg";
 import blind from "../assets/images/blind.svg";
-
-const SideBar = () => {
-  return (
-    <Flex
-      stack={true}
-      style={{ padding: "110px 24px 24px 24px" }}
-      className=""
-      spacing={20}
-    >
-      <Flex
-        style={{ padding: "18px" }}
-        className=" bg-dark rounded"
-        stack={true}
-        spacing={38}
-      >
-        <img src={home} alt="home" />
-        <img src={playlist} alt="playlist" />
-        <img src={radio} alt="radio" />
-        <img src={vid} alt="video" />
-      </Flex>
-      <Flex
-        style={{ padding: "18px" }}
-        className="bg-dark rounded "
-        spacing={38}
-        stack={true}
-      >
-        <img src={user} alt="user" />
-        <img src={logout} alt="logout" />
-      </Flex>
-    </Flex>
-  );
-};
 
 const TopCharts = (props) => {
   return (
@@ -73,7 +38,14 @@ const TopCharts = (props) => {
 const Content = () => {
   return (
     <div style={{ padding: "110px 60px 24px 0px", width: "100%" }} className="">
-      <Grid span={12}>
+      <Grid
+        span={12}
+        style={
+          {
+            //   height: "45vh",
+          }
+        }
+      >
         <GridItem
           span={7}
           md={12}
@@ -83,9 +55,9 @@ const Content = () => {
             height: "45vh",
           }}
         >
-          {"R & B Hits"}
+          <h1 className="white">{"R & B Hits"}</h1>
         </GridItem>
-        <GridItem span={5} className="">
+        <GridItem span={5} md={12} className="">
           <Flex stack={true} spacing={12}>
             <p className="white topic">Top Charts</p>
             <TopCharts
@@ -129,7 +101,11 @@ const NewReleases = (props) => {
   return (
     <Flex
       className=""
-      style={{ paddingLeft: "101px", paddingTop: "20px", paddingRight: "60px" }}
+      style={{
+        paddingTop: "20px",
+        paddingLeft: "101px",
+        paddingRight: "60px",
+      }}
       stack={true}
       spacing={12}
     >
@@ -156,7 +132,7 @@ const Homepage = () => {
   return (
     <Flex stack={true}>
       <Flex className="">
-        <SideBar />
+        <SideBar playlist={playlist} home={home} />
         <Content />
       </Flex>
       <NewReleases heading={"New Releases."} />

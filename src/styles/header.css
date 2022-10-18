@@ -5,9 +5,7 @@
   width: 100%;
 }
 .header-icon {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-right: 24px;
+  padding: 24px;
 }
 
 .icon {
@@ -19,4 +17,16 @@
 .input {
   background-color: transparent;
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-right: 20px;
+    padding-left: 20px;
+    position: fixed;
+    width: 89%;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+  }
 }

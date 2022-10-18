@@ -11,8 +11,6 @@ const Layout = (props) => {
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
-        // paddingRight: "60px",
-        // paddingLeft: "20px",
       }}
     >
       <Header />
