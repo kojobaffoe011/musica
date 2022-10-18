@@ -36,11 +36,12 @@ const Collection = () => {
   ];
   return (
     <Flex
+      className="collection-padding"
       stack={true}
       spacing={24}
       style={{
         width: "100%",
-        padding: "110px 60px 24px 0px",
+        // padding: "110px 60px 24px 0px",
       }}
     >
       <Flex spacing={30}>
@@ -73,11 +74,12 @@ const Collection = () => {
       </Flex>
 
       <Grid span={12} className="">
-        {collections.map((collection) => {
+        {collections.map((collection, index) => {
           return (
             <GridItem
+              key={index}
               span={2}
-              md={12}
+              md={11}
               className="collection"
               style={{
                 position: "relative",

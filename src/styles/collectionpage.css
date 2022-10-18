@@ -2,3 +2,13 @@
   border-radius: 20px;
   height: 25vh;
 }
+
+.collection-padding {
+  padding: 110px 60px 24px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .collection-padding {
+    padding: 72px 0px 20px 20px;
+  }
+}
