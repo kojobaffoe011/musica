@@ -14,7 +14,7 @@ import Grid, { GridItem } from "./layout/Grid";
 const Footer = () => {
   return (
     <Grid className="app-footer " span={12}>
-      <GridItem span={2} md={1} className="">
+      <GridItem span={2} md={2} className="">
         <Flex className="" spacing={14}>
           <div style={{ height: "49px", width: "49px" }} className="">
             <img
@@ -51,7 +51,7 @@ const Footer = () => {
         </Flex>
       </GridItem>
       <GridItem span={2} md={0} className="">
-        <Flex className="" style={{ flexBasis: "15%" }} ai="center" spacing={7}>
+        <Flex className="" ai="center" spacing={7} style={{ height: "100%" }}>
           <img src={sound} alt="sound" />
           <div
             className=" flex-grow"
@@ -63,7 +63,7 @@ const Footer = () => {
           ></div>
         </Flex>
       </GridItem>
-      <GridItem span={0} md={7} className="">
+      <GridItem span={0} md={10} className="">
         <Flex
           className="flex-grow "
           style={{ width: "100%", height: "100%" }}
