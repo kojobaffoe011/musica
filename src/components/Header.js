@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Flex from "./layout/Flex";
 import "../styles/header.css";
 import logo from "../assets/icons/logo.svg";
@@ -7,6 +7,11 @@ import search from "../assets/icons/search.svg";
 import Grid, { GridItem } from "./layout/Grid";
 
 const Header = () => {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen);
+  };
+
   return (
     <Grid span={12} className=" header bg-primary">
       <GridItem span={1} md={0}>
@@ -31,7 +36,9 @@ const Header = () => {
       <GridItem span={0} md={12} style={{ height: "10vh" }}>
         <Flex className="" style={{ height: "100%" }} ai="center">
           <Flex ai="center" spacing={26}>
-            <img src={burger} style={{ height: "16px", width: "16px" }} />
+            <div className="bordered" onClick={toggleHamburger}>
+              <img src={burger} style={{ height: "16px", width: "16px" }} />
+            </div>
             <img src={logo} style={{ height: "30px", width: "30px" }} />
           </Flex>
           <Flex className="flex-grow " jc="flex-end">
