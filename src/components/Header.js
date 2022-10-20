@@ -36,9 +36,15 @@ const Header = () => {
       <GridItem span={0} md={12} style={{ height: "10vh" }}>
         <Flex className="" style={{ height: "100%" }} ai="center">
           <Flex ai="center" spacing={26}>
-            <div className="bordered" onClick={toggleHamburger}>
-              <img src={burger} style={{ height: "16px", width: "16px" }} />
-            </div>
+            <Flex
+              className="bordered"
+              onClick={toggleHamburger}
+              stack={true}
+              spacing={6}
+            >
+              <div className="burger burger1" />
+              <div className="burger burger2" />
+            </Flex>
             <img src={logo} style={{ height: "30px", width: "30px" }} />
           </Flex>
           <Flex className="flex-grow " jc="flex-end">

@@ -20,6 +20,15 @@
   border: none;
 }
 
+.burger {
+  width: 20px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: white;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+
 @media screen and (max-width: 768px) {
   .header {
     padding-right: 20px;
